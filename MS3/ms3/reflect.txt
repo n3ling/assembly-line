@@ -1,0 +1,3 @@
+This final project I needed to use STL algorithms, containers, pointers to arrays, move operators and string manipulation.
+I had a few issues with memory management due to misuing the swap() function. swap() swaps the values stored in the variables in the parameters but does not account for memory allocation and deallocation. 
+To fix this issue I changed swap and used a regular assignment operator for m_lstItem in CustomerOrder. I would delete m_lstItem before assigning the new values to it and this fixed the memory leak.
